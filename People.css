@@ -1,0 +1,172 @@
+/* General Container Adjustments */
+.people-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Search Bar Section */
+.people-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px; /* Add this line to add space between elements */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+.search-icon {
+  display: inline-block;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 18px;
+  border: 1px solid #2563eb;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.add-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #2acf49;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* People Cards Section */
+.people-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.people-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 9px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+.people-card h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #1e3a8a;
+}
+
+.people-card p {
+  margin: 5px 0 0;
+  color: #4b5563;
+}
+
+.delete-button {
+  background-color: #ef4444;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #dc2626;
+}
+
+/* Modal Section */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-content input {
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #1d4ed8;
+}
+
+.cancel-button {
+  background-color: #f3f4f6;
+  color: #111827;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #d1d5db;
+}
